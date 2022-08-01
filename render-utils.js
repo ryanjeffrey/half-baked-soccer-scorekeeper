@@ -7,6 +7,8 @@ export function renderGame(name1, name2, score1, score2) {
     div.append(team1Div, team2Div);
 
     div.classList.add('game');
+    team1Div.classList.add('team');
+    team2Div.classList.add('team');
 
     return div;
 }
@@ -18,6 +20,9 @@ export function renderTeam(name, score) {
 
     nameDiv.textContent = name;
     scoreDiv.textContent = score;
+
+    nameDiv.classList.add('name');
+    scoreDiv.classList.add('score');
 
     teamDiv.append(nameDiv, scoreDiv);
 

@@ -15,6 +15,7 @@ const teamOneLabel = document.getElementById('team-one-name');
 const teamTwoLabel = document.getElementById('team-two-name');
 
 // create an array to hold on to the state of past games
+const pastGames = [];
 
 let currentGame = {
     name1: '',

@@ -1,14 +1,12 @@
 // consider: what data type is game here? where will you need to pass it this data type in your app?
-export function renderGame(name1, name2, score1, score2) {
+export function renderGame(game) {
     const div = document.createElement('div');
-    const team1Div = renderTeam(name1, score1);
-    const team2Div = renderTeam(name2, score2);
+    const team1Div = renderTeam(game.name1, game.score1);
+    const team2Div = renderTeam(game.name2, game.score2);
 
     div.append(team1Div, team2Div);
 
     div.classList.add('game');
-    team1Div.classList.add('team');
-    team2Div.classList.add('team');
 
     return div;
 }
